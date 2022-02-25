@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        STUDENT ENROLLMENT FORM !
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<p class="P">LGM - TASK- 3</p>
+<h1 class="title">STUDENT ENROLLMENT FORM</h1>
+
+<body>
+    <table class="table1">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>NAME</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                        <input type="text" name="fullName" id="fullName" required>
+                    </div>
+                    <div>
+                        <label>EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label>WEBSITE</label>
+                        <input type="text" name="website" id="website" required>
+                    </div>
+                    <div>
+                        <label>MOBILE NUMBER</label>
+                        <input type="text" name="phone" id="phone" required>
+                    </div>
+                    
+                    <div>
+                        <label>CITY</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </td>
+            
+        </tr>
+    </table>
+
+    <table >
+        
+            
+                <table class="list" id="STUDList">
+                    <thead>
+                        <h2>Below Are Enrolled Students</h2>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Website</th>
+                            <th>Mobile Number</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            
+        
+    </table>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
